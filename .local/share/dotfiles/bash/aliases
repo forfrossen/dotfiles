@@ -21,6 +21,16 @@ alias bat='batcat'
 alias lzg='lazygit'
 alias lzd='lazydocker'
 
+alias grep='grep --color'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias dnstop='sudo dnstop -l 5 ens18'
+alias vnstat='vnstat -i ens18'
+alias bc='bc -l'
+#alias ll='ls -la'
+alias ll='eza -lagh --icons --group-directories-first --smart-group'
+alias cat=bat
+alias yubimount='yubi-mount.sh'
+
 # Git
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
