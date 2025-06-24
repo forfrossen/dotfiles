@@ -1,0 +1,5 @@
+source ~/.local/share/dotfiles/bash/shell
+source ~/.local/share/dotfiles/bash/aliases
+source ~/.local/share/dotfiles/bash/functions
+source ~/.local/share/dotfiles/bash/prompt
+source ~/.local/share/dotfiles/bash/init
