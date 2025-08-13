@@ -12,3 +12,5 @@ export PATH="./bin:$HOME/.local/bin:$HOME/.local/share/omakub/bin:$PATH"
 set +h
 
 export OMAKUB_PATH="/home/$USER/.local/share/omakub"
+
+unset color_prompt force_color_prompt

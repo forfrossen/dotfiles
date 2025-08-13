@@ -3,4 +3,6 @@ source ~/.local/share/dotfiles/bash/aliases
 source ~/.local/share/dotfiles/bash/functions
 source ~/.local/share/dotfiles/bash/prompt
 source ~/.local/share/dotfiles/bash/init
+source ~/.local/share/dotfiles/bash/nvm
 source ~/.local/share/dotfiles/bash/oh-my-posh
+source ~/.local/share/dotfiles/bash/zoxide
