@@ -1,10 +1,14 @@
+if command -v oh-my-posh >/dev/null 2>&1; then
+  USER_THEME="$HOME/.cache/oh-my-posh/themes/nordtron.omp.json"
+  SYS_THEME="/usr/local/share/oh-my-posh/themes/nordtron.omp.json"
 
-if [ -n "oh-my-posh" ]; then
-  if [ -f ~/.cache/oh-my-posh/themes/nordtron.omp.json ]; then
-    eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/nordtron.omp.json)"
+  if [ -f "$USER_THEME" ]; then
+    eval "$(oh-my-posh init bash --config "$USER_THEME")"
+  elif [ -f "$SYS_THEME" ]; then
+    eval "$(oh-my-posh init bash --config "$SYS_THEME")"
   else
-    echo "Oh My Posh theme not found: ~/.cache/oh-my-posh/themes/nordtron.omp.json"
+    echo "Oh My Posh theme not found: $USER_THEME or $SYS_THEME" >&2
   fi
 else
-  echo "Oh My Posh is not installed."
+  echo "Oh My Posh is not installed (command 'oh-my-posh' not found in PATH)" >&2
 fi
